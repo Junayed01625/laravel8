@@ -1,0 +1,30 @@
+Model 
+view
+controller
+
+route->road
+
+client->kacchi->route->controller(kacchi)->database
+
+http request->route->controller->model->controller->view(when you want to data from database)
+http->route->controller->view(when you don't need to data from database that means static data)
+
+
+Request lifecycle
+
+user(HTTP Request)->web server(Apache/Nginx)->public(index)->bootstrap(app.php)[create application basement]
+
+console kernel=>console command prompt
+http kernel=>http request
+
+boot
+
+dispatch->router->controller@method
+
+route type 
+Route::get($uri, $callback);
+Route::post($uri, $callback);
+Route::put($uri, $callback);
+Route::patch($uri, $callback);
+Route::delete($uri, $callback);
+Route::options($uri, $callback);
